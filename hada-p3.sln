@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37012.4 d17.14
+VisualStudioVersion = 17.14.37012.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hada-p3", "hada-p3\hada-p3.csproj", "{D4BD5DE7-9B66-4CC4-97EC-216ACB90BA5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "library", "library\library.csproj", "{B053CAD6-1851-4C6E-A9DD-90EDF97AB383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D4BD5DE7-9B66-4CC4-97EC-216ACB90BA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4BD5DE7-9B66-4CC4-97EC-216ACB90BA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4BD5DE7-9B66-4CC4-97EC-216ACB90BA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B053CAD6-1851-4C6E-A9DD-90EDF97AB383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B053CAD6-1851-4C6E-A9DD-90EDF97AB383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B053CAD6-1851-4C6E-A9DD-90EDF97AB383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B053CAD6-1851-4C6E-A9DD-90EDF97AB383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
