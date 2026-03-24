@@ -188,7 +188,25 @@ namespace library
             bool leido = false;
             try
             {
-                
+                using (SqlConnection c = new SqlConnection(constring))
+                {
+                    c.Open();
+                    string query = "SELECT TOP 1 * FROM Products WHERE code < @code ORDER BY code DESC";
+                    SqlCommand cmd = new SqlCommand(query, c);
+                    cmd.Parameters.AddWithValue("@code", en.Code);
+                    SqlDataReader dr = cmd.ExecuteReader();
+
+                    if (dr.Read())
+                    {
+                        en.Code = dr["code"].ToString();
+                        en.Name = dr["name"].ToString();
+                        en.Amount = int.Parse(dr["amount"].ToString());
+                        en.Price = float.Parse(dr["price"].ToString());
+                        en.Category = int.Parse(dr["category"].ToString());
+                        en.CreationDate = DateTime.Parse(dr["creationDate"].ToString());
+                        leido = true;
+                    }
+                }
             }
             catch (SqlException ex)
             {
