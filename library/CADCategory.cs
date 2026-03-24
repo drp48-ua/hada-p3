@@ -33,7 +33,11 @@ namespace library
                     }
                 }
             }
-            
+            catch (SqlException ex)
+            {
+                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message);
+            }
+            return lista;
         }
     }
 }
