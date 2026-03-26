@@ -8,12 +8,12 @@ namespace library
     {
         private string constring;
 
-        public CADProduct() 
+        public CADProduct()
         {
             constring = ConfigurationManager.ConnectionStrings["miconexion"].ToString();
         }
 
-        public bool create(ENProduct en) 
+        public bool create(ENProduct en)
         {
             bool exito = false;
             try
@@ -35,12 +35,12 @@ namespace library
             }
             catch (SqlException ex)
             {
-                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message); 
+                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message);
             }
             return exito;
         }
 
-        public bool update(ENProduct en) 
+        public bool update(ENProduct en)
         {
             bool exito = false;
             try
@@ -62,12 +62,12 @@ namespace library
             }
             catch (SqlException ex)
             {
-                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message); 
+                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message);
             }
             return exito;
         }
 
-        public bool delete(ENProduct en) 
+        public bool delete(ENProduct en)
         {
             bool exito = false;
             try
@@ -84,12 +84,12 @@ namespace library
             }
             catch (SqlException ex)
             {
-                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message); 
+                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message);
             }
             return exito;
         }
 
-        public bool read(ENProduct en) 
+        public bool read(ENProduct en)
         {
             bool leido = false;
             try
@@ -115,12 +115,12 @@ namespace library
             }
             catch (SqlException ex)
             {
-                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message); 
+                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message);
             }
             return leido;
         }
 
-        public bool readFirst(ENProduct en) 
+        public bool readFirst(ENProduct en)
         {
             bool leido = false;
             try
@@ -178,12 +178,12 @@ namespace library
             }
             catch (SqlException ex)
             {
-                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message); 
+                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message);
             }
             return leido;
         }
 
-        public bool readPrev(ENProduct en) 
+        public bool readPrev(ENProduct en)
         {
             bool leido = false;
             try
@@ -210,7 +210,7 @@ namespace library
             }
             catch (SqlException ex)
             {
-                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message); 
+                Console.WriteLine("Product operation has failed. Error: {0}", ex.Message);
             }
             return leido;
         }
